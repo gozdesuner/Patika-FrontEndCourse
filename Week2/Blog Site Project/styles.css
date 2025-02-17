@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0%;
+  }
+  
+  nav {
+    border-radius: 0 0 15px 15px;
+    background-color: #333;
+    align-content: center;
+    text-align: center;
+  }
+  
+  nav ul {
+    padding-top: 0;
+    margin-top: 0%;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    display: inline;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    width: 100%;
+    margin: 20px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+    margin-top: 0%;
+    padding-top: 50px;
+  }
+  
+  .blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  article {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .main-blog {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  /* Blog Gönderisi Kutusu */
+  .blog-post {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 75%;
+    max-width: 1000px;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .blog-post img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
