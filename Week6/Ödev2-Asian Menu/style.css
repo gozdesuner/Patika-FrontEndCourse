@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2f; /* Daha yumuşak bir koyu arka plan */
+  font-family: "Zilla Slab", serif;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #ffa07a; /* Soft mercan tonu */
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  color: #b0b0b0; /* Açık gri */
+}
+
+.btn-item {
+  margin-left: 15px;
+  color: #c0c0c0; /* Hafif daha açık gri */
+}
+
+.photo {
+  width: 30%;
+  height: 175px;
+  object-fit: cover;
+  border: 0.25rem solid #2f2f3f;
+  border-radius: 10px;
+}
+
+.menu-items {
+  display: flex;
+  margin: 20px 0;
+}
+
+.menu-info {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #444;
+}
+
+h4 {
+  color: #ff6363; /* Pastel kırmızı */
+}
+
+.menu-text {
+  padding-top: 20px;
+  color: #f8f8ff; /* Neredeyse beyaz ama yumuşak */
+}
