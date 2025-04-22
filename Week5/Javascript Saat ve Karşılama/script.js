@@ -1,19 +1,32 @@
-// Kullanıcıdan isim al
-let userName = prompt("Lütfen isminizi giriniz:");
+function startApp() {
+  const name = document.getElementById("name").value.trim();
 
-// İsmi HTML'e yaz
-document.getElementById(
-  "greeting"
-).innerHTML = `Merhaba, <strong>${userName}</strong>! Hoş geldin!`;
+  if (name === "") {
+    alert("Lütfen isminizi giriniz.");
+    return;
+  }
 
-// Saati gösteren fonksiyon
+  // İsmi yazdır
+  document.getElementById(
+    "greeting"
+  ).innerHTML = `Merhaba, <strong>${name}</strong>! Hoş geldin!`;
+
+  // Ekran geçişi
+  document.getElementById("nameInputContainer").style.display = "none";
+  document.getElementById("mainContainer").style.display = "block";
+
+  // Saati başlat
+  showTime();
+  setInterval(showTime, 1000);
+}
+
 function showTime() {
-  let now = new Date();
-  let hour = now.getHours().toString().padStart(2, "0");
-  let minute = now.getMinutes().toString().padStart(2, "0");
-  let second = now.getSeconds().toString().padStart(2, "0");
+  const now = new Date();
+  const hour = now.getHours().toString().padStart(2, "0");
+  const minute = now.getMinutes().toString().padStart(2, "0");
+  const second = now.getSeconds().toString().padStart(2, "0");
 
-  let days = [
+  const days = [
     "Pazar",
     "Pazartesi",
     "Salı",
@@ -22,12 +35,9 @@ function showTime() {
     "Cuma",
     "Cumartesi",
   ];
-  let dayName = days[now.getDay()];
+  const day = days[now.getDay()];
 
   document.getElementById(
     "clock"
-  ).innerHTML = `${hour}:${minute}:${second} ${dayName}`;
+  ).innerHTML = `${hour}:${minute}:${second} ${day}`;
 }
-
-// Her saniyede bir güncelle
-setInterval(showTime, 1000);
